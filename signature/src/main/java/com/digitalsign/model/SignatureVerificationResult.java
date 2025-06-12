@@ -68,4 +68,14 @@ public class SignatureVerificationResult {
         int[] priority = {0,3,4,2,1,5};
         return priority[a.ordinal()] > priority[b.ordinal()] ? a : b;
     }
+
+    public List<SignatureInfo> getSignatures() {
+        return signatures;
+    }
+
+    public void setSignatures(List<SignatureInfo> signatures) {
+        this.signatures = signatures;
+        this.signatureCount = signatures.size();
+        this.hasSignature = !signatures.isEmpty();
+    }
 }
