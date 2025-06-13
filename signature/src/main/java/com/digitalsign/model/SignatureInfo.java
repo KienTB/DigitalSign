@@ -22,8 +22,8 @@ public class SignatureInfo {
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime signingTime;
 
-    private String hashAlgoristhm;
-    private String signatureAlgoristhm;
+    private String hashAlgorithm;
+    private String signatureAlgorithm;
     private CertificateInfo certificate;
     private VerificationStatus status;
     private String statusMessage;
